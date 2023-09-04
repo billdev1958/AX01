@@ -1,0 +1,12 @@
+@use './components/navBar';
+@use './pages/homePage';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+$source-code: 'Source Code Pro',  monospace;
+
+
+*{
+    margin: 0;
+}
+
