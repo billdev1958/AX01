@@ -1,9 +1,9 @@
-function About() {
+function Proyects() {
     return (
         <div className="home-cont">
-        About
+        Proyectos
         </div>
     )
     } 
-    
-    export default About
+
+    export default Proyects

@@ -1,4 +1,6 @@
-import logo from "../images/logo2.svg";
+import { Link } from "react-router-dom"
+
+const NavRouter = [["Inicio", "/"], ["Soluciones", "solutions"], ["Proyectos", "proyects"], ["Acerca de", "about"]]
 
 function Navbar() {
     return (
@@ -6,11 +8,17 @@ function Navbar() {
             <div className="nav-logo">
                 <p>AX01</p>
             </div>
-            <div className="cont-buttons-nav">
-                <div className="nav-button">Inicio</div>
-                <div className="nav-button">Soluciones IT</div>
-                <div className="nav-button">Acerca de </div>
-            </div>
+            <nav className="cont-buttons-nav">
+                {NavRouter.map(([title, url]) => (
+                    <div className="nav-button">
+                        <Link className="nav-link"
+                            to={url}
+                        >
+                            {title}
+                        </Link>
+                    </div>
+                ))}
+            </nav>
         </div>
     )
 }
