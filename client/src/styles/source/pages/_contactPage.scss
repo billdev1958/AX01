@@ -1,0 +1,32 @@
+.contactMain{
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logoContact{
+    width: 8rem;
+}
+
+.listContacts{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contList{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    border:  0.0625rem solid transparent;
+    padding: 3.75rem 2rem 2.25rem;
+
+}
+
+.contacts{
+   // border:  0.0625rem solid blanchedalmond;
+    padding: 1rem;
+}

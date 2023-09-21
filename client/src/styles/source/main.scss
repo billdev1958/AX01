@@ -1,0 +1,51 @@
+@use './components/navBar';
+@use './pages/homePage';
+@use './components/footer';
+@use './pages/contactPage';
+@use './components/navBarMobile';
+@use './pages/solutionsPage';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+$source-code: 'Source Code Pro',  monospace;
+
+h1{
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0;
+    font-size: calc(2rem + .25 * ((100vw - 20rem)/ 22));
+    font-weight: 300;
+
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.site{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    background-color: #1b1f23;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+html{
+    max-height: 100%;
+    min-height: 100vh;
+}
+
+
+
+.Header--dark {
+    border-bottom: none;
+    color: #fff;
+}
