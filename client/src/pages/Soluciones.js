@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Soluciones() {
     return (
         <div className="home-cont">
@@ -12,7 +14,7 @@ function Soluciones() {
                 </div>
 
                 <div className="buttonSolutions">
-                    <div className="buttonM1">Contactanos y obtenga mas informacion sobre nuestros servicios</div>
+                    <Link to={"/contact"} className="buttonM1">Contactanos y obtenga mas informacion sobre nuestros servicios</Link>
                 </div>
             </div>
 
@@ -30,7 +32,7 @@ function Soluciones() {
                 </div>
 
                 <div className="buttonSolutions">
-                    <div className="buttonM1">Contactanos y obtenga mas informacion sobre nuestros servicios</div>
+                    <Link to={"/contact"}  className="buttonM1">Contactanos y obtenga mas informacion sobre nuestros servicios</Link>
                 </div>
             </div>
             </div>

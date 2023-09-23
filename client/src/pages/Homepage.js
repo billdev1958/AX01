@@ -23,7 +23,6 @@ function Homepage() {
             </div>
 
 
-
             <div className="header-introduction">
                 <div className="intro-text">
                     <div className="textI">
@@ -118,7 +117,7 @@ function Homepage() {
             <div className="header-introduction">
                 <div className="intro-text">
                     <div className="textI">
-                        <p>Axol es una empresa con un enfoque en tecnologias mas flexible ya que no nos cerramos en opciones en cuanto a tecnologias que usaremos para darte el mejor producto final posible para que nuestro software se lleve bien con el paso del tiempo</p>
+                        <p>Ahorra tiempo y dinero automatizando tus procesos en tu negocio o trabajo y minimiza el error humano con nuestro software creado a la medida para ti </p>
                     </div>
                 </div>
             </div>
