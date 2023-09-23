@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {
-  createBrowserRouter,
+  HashRouter,
   RouterProvider
 } from "react-router-dom"
 import Homepage from './pages/Homepage';
@@ -11,7 +11,7 @@ import Proyects from './pages/Proyects';
 import Contact from './pages/Contact';
 
 
-const router = createBrowserRouter([
+const router = HashRouter([
   {
     path: "/",
     element: <App/>,
