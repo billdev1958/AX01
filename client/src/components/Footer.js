@@ -8,7 +8,7 @@ function Footer() {
                     <img src={logoF} className="footer-logo" alt="logo" />
                 </div>
                 <div>
-                    <h3>Axol</h3>
+                    <h3>Ax01</h3>
                 </div>
             </div>
             <div className="footer-list">

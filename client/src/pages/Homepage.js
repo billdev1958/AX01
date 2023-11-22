@@ -114,14 +114,6 @@ function Homepage() {
                 </div>
             </div>
 
-            <div className="header-introduction">
-                <div className="intro-text">
-                    <div className="textI">
-                        <p>Ahorra tiempo y dinero automatizando tus procesos en tu negocio o trabajo y minimiza el error humano con nuestro software creado a la medida para ti </p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 }

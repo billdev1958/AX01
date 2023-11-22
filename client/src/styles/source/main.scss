@@ -1,6 +1,7 @@
 @use './components/navBar';
 @use './pages/homePage';
 @use './components/footer';
+@use './pages/aboutPage';
 @use './pages/contactPage';
 @use './components/navBarMobile';
 @use './pages/solutionsPage';
@@ -8,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
 $source-code: 'Source Code Pro',  monospace;
+
 
 h1{
 
@@ -35,6 +37,7 @@ p{
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -48,4 +51,12 @@ html{
 .Header--dark {
     border-bottom: none;
     color: #fff;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }

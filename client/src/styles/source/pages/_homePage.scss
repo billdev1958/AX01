@@ -103,8 +103,9 @@ $source-code: 'Source Code Pro',  monospace;
 }
 
 .solutions {
-    background-color: #2d2d2d;
-    border:  0.0625rem solid transparent;
+    box-shadow: 0 0 0 1px #c6c6c6;
+
+    border: 0.0625rem solid transparent;
     border-radius: 0.25rem;
     display: flex;
     flex: 0 30%;
@@ -114,8 +115,6 @@ $source-code: 'Source Code Pro',  monospace;
     margin-bottom: 1.5rem;
     margin-top: 0;
     max-width: 40rem;
-
-    
     
 }
 
@@ -169,6 +168,8 @@ $source-code: 'Source Code Pro',  monospace;
 }
 
 .solution-footer{
+    box-shadow: 0 0 0 1px #c6c6c6;
+
     padding: 1rem 2rem 2rem;
     background-color: #202224;
 }

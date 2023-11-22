@@ -24,8 +24,11 @@ function NavbarMobile() {
                                 <li className="Header-menuItem">
                                     <Link to={"/"}>Inicio</Link>
                                 </li>
-                                <li className="Header-menuItem">
+                                {/* <li className="Header-menuItem">
                                 <Link to={"/solutions"}>Soluciones</Link>
+                                </li> */}
+                                <li className="Header-menuItem">
+                                <Link to={"/about"}>Acerca de</Link>
                                 </li>
                                 <li className="Header-menuItem">
                                 <Link to={"/contact"}>Contacto</Link>
@@ -53,8 +56,12 @@ function NavbarMobile() {
                         <Link onClick={() => setOpen(!open)} to={"/"}>Inicio</Link>
                         </li>
 
-                        <li className="NavigationDrawer-listItem">
+                        {/* <li className="NavigationDrawer-listItem">
                         <Link onClick={() => setOpen(!open)} to={"/solutions"}>Soluciones</Link>
+                        </li> */}
+
+                        <li className="NavigationDrawer-listItem">
+                        <Link onClick={() => setOpen(!open)} to={"/about"}>Acerca de</Link>
                         </li>
 
                         <li className="NavigationDrawer-listItem">
