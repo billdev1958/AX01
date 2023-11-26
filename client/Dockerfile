@@ -17,7 +17,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copia los archivos construidos de la aplicación React
-COPY --from=app  ./app/build /usr/share/nginx/html
+COPY --from=app  /app/build /usr/share/nginx/html
 
 # Copia la configuración de Nginx
 COPY ./default.conf /etc/nginx/conf.d/default.conf

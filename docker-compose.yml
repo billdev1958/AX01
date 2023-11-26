@@ -1,0 +1,55 @@
+version: '3'
+
+networks:
+  nginx-proxy:
+    external: true
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:ro
+      - vhostd:/etc/nginx/vhost.d
+      - acme:/etc/acme.sh
+    environment:
+      - DEFAULT_HOST=default.local
+    networks:
+      - nginx-proxy
+
+  letsencrypt-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: letsencrypt-companion
+    volumes:
+      - certs:/etc/nginx/certs:rw
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - acme:/etc/acme.sh
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy
+    networks:
+      - nginx-proxy
+
+  www:
+    image: nginx:alpine
+    restart: always
+    expose:
+      - "80"
+    volumes:
+      - /home/billy/ax01/client/build:/usr/share/nginx/html:ro
+    environment:
+      - VIRTUAL_HOST=ax01.dev,www.ax01.dev
+      - LETSENCRYPT_HOST=ax01.dev,www.ax01.dev
+    networks:
+      - nginx-proxy
+
+volumes:
+  certs:
+  html:
+  vhostd:
+  acme:
